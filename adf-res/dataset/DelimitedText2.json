@@ -1,0 +1,72 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "hitAzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "copyblob1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "user_id",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "given_name",
+				"type": "String"
+			},
+			{
+				"name": "family_name",
+				"type": "String"
+			},
+			{
+				"name": "nickname",
+				"type": "String"
+			},
+			{
+				"name": "last_ip",
+				"type": "String"
+			},
+			{
+				"name": "logins_count",
+				"type": "String"
+			},
+			{
+				"name": "created_at",
+				"type": "String"
+			},
+			{
+				"name": "updated_at",
+				"type": "String"
+			},
+			{
+				"name": "last_login",
+				"type": "String"
+			},
+			{
+				"name": "email_verified",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

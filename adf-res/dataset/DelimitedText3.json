@@ -1,0 +1,88 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "hitAzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "asiacupbatsman"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Player Name",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Time Period",
+				"type": "String"
+			},
+			{
+				"name": "Matches",
+				"type": "String"
+			},
+			{
+				"name": "Played",
+				"type": "String"
+			},
+			{
+				"name": "Not Outs",
+				"type": "String"
+			},
+			{
+				"name": "Runs",
+				"type": "String"
+			},
+			{
+				"name": "Highest Score",
+				"type": "String"
+			},
+			{
+				"name": "Batting Average",
+				"type": "String"
+			},
+			{
+				"name": "Balls Faced",
+				"type": "String"
+			},
+			{
+				"name": "Strike Rate",
+				"type": "String"
+			},
+			{
+				"name": "Centuries",
+				"type": "String"
+			},
+			{
+				"name": "Fifties",
+				"type": "String"
+			},
+			{
+				"name": "Ducks",
+				"type": "String"
+			},
+			{
+				"name": "Fours",
+				"type": "String"
+			},
+			{
+				"name": "Sixes",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

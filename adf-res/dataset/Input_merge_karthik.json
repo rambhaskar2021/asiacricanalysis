@@ -1,0 +1,20 @@
+{
+	"name": "Input_merge_karthik",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_karthik",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Data_karthik",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "karthikbcontainer"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
